@@ -17,13 +17,13 @@ class BankAccount{
     String customerName;
     String customerId;
 
-//    create a bank account constructor that takes two parameters customer name and customer Id
+    //    create a bank account constructor that takes two parameters customer name and customer Id
     BankAccount(String cname, String cid){
         customerName = cname;
         customerId = cid;
     }
 
-//    create a method that takes an amount parameter.
+    //    create a method that takes an amount parameter.
     void deposit(int amount){
         if (amount != 0){
             balance = balance + amount;
@@ -31,7 +31,7 @@ class BankAccount{
         }
     }
 
-//    create a withdraw method that also take a parameter amount for the withdrawn amount.
+    //    create a withdraw method that also take a parameter amount for the withdrawn amount.
     void withdraw(int amount) {
         if (amount != 0) {
             balance = balance - amount;
@@ -39,7 +39,7 @@ class BankAccount{
         }
     }
 
-//    create a method that shows the previous amount that been withdrawn
+    //    create a method that shows the previous amount that been withdrawn
     void getPreviousTransaction(){
         if (previousTransaction > 0){
             System.out.println("Deposited amount is: " + previousTransaction);
@@ -52,7 +52,7 @@ class BankAccount{
         }
     }
 
-//    create a method to show the menu for the customer
+    //    create a method to show the menu for the customer
     void showMenu(){
         char option = '\0';
         Scanner scanner = new Scanner(System.in);
